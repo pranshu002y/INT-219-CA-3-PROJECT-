@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body style=" background-image: none; background-color:yellowgreen;">
+    <div class="nav">
+        <nav style="background: none;">
+            <a href="#" class="logo"></a>
+            <ul class="menu">
+                <li><a href="project.html">HOME</a></li>
+                <li><a href="project2.html">BEST SELLLER</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="rate.html">SUPPORT</a></li>
+                
+            </ul>
+            
+        </nav>
+    </div>
+ 
+    <div class="info">
+        <div class="overlay"> <img src="qq.jpg" class="mob"></div>
+
+       
+
+        <div class="cir" id="circle">
+
+            <div class="feature one">
+                <img src="camera.jpg">
+                <diV>
+                    <h2>CAMERA </h2>
+                    <p> 48MP,Wide Angle </p>
+                </diV>
+            </div>
+            <div class="feature two">
+                <img src="now.png">
+                <diV>
+                    <h2>DISPLAY</h2>
+                    <p>6.57 INCH</p>
+                </diV>
+            </div>
+            <div class="feature three">
+                <img src="tran.png">
+                <diV>
+                    <h3>PROCESSOR</h3>
+                    <p> 870 snapdragon</p>
+                </diV>
+            </div>
+            <div class="feature four">
+                <img src="batt.png">
+                <diV>
+                    <h2>BATTERY</h2>
+                    <p>5400 MAH</p>
+                </diV>
+            </div>
+        </div>
+    </div>
+    <div class="x">
+        <button onclick="up()"> ^ </button>
+        <h1 style="font-family: cursive ; color: black;">FeAtUrEs</h1>
+        <button onclick="dn()" style="transform: rotate(180deg);"> ^ </button>
+
+    </div>
+    <div class="y" style="position: absolute; top: 80%; right: 20%;">
+        <h2>MODEL:-</h2>
+        <h3 style="margin-left: 120px; margin-top: -20px;">IPHONE 7 PLUS</h3>
+    </div>
+
+    
+    <script>
+
+        var rv = document.getElementById("circle").style.transform;
+        var rs;
+        function up() {
+
+            rs = rv + "rotate(-90deg)";
+            document.getElementById("circle").style.transform = rs;
+            rv = rs;
+
+        }
+        function dn() {
+
+            rs = rv + "rotate(+90deg)";
+            document.getElementById("circle").style.transform = rs;
+            rv = rs;
+
+        }
+    </script>
+
+
+</body>
+
+</html>
